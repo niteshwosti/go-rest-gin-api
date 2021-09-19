@@ -8,7 +8,7 @@ import (
 
 func SetupRouter() *gin.Engine {
 	r := gin.Default()
-	grp1 := r.Group("/go-rest-gin-api")
+	grp1 := r.Group("/go-rest-gin-api/")
 	{
 		grp1.GET("user", Controllers.GetUsers)
 		grp1.POST("user", Controllers.CreateUser)
